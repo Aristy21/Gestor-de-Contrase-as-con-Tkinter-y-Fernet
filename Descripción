@@ -1,0 +1,17 @@
+Este proyecto es un gestor de contraseñas local creado en Python, usando Tkinter para la interfaz gráfica y cryptography (Fernet) para el cifrado seguro de datos.
+La idea principal fue construir una herramienta sencilla, funcional y comprensible, que no dependa de servicios en la nube para proteger la información del usuario
+
+-Funcionalidades principales
+
+Agregar nuevas contraseñas: se guardan de forma cifrada en un archivo local (passwords.txt).
+Visualizar contraseñas guardadas: se desencriptan temporalmente y se muestran en una tabla interactiva.
+Eliminar contraseñas: permite borrar registros directamente desde la interfaz.
+Mostrar/Ocultar contraseñas: alterna la visibilidad del campo de texto.
+Clave de encriptación única: se genera automáticamente y se guarda en key.key la primera vez que se ejecuta el programa.
+
+Este proyecto nació como un ejercicio personal para mejorar mi manejo de Tkinter y entender a fondo cómo funciona el cifrado con Fernet.
+Antes de llegar a esta versión final, trabajé varias pruebas más simples:
+
+Versión 1: guardaba contraseñas sin cifrado (solo para probar la GUI).
+Versión 2: agregué encriptación básica con base64.
+Versión 3 (actual): integración completa de Tkinter + cryptography (Fernet) con manejo de archivos y una interfaz más limpia.
